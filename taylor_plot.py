@@ -3,7 +3,7 @@ from matplotlib.animation import FuncAnimation
 import numpy as np
 import sympy as sp
 # from mathutils import operators as ops
-import taylor
+from mathlab import taylor
 
 x = sp.Symbol('x')
 num_pow = 2
