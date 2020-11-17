@@ -1,5 +1,5 @@
 import numpy as np
-from mathutils import operators as ops
+from mathlab.mathutils import operators as ops
 
 def taylor_series(nterms, indep_var, basefunc, x_val, origin = 0):
   baseval = basefunc.evalf(n =3, subs = {indep_var : origin})
