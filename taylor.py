@@ -2,6 +2,12 @@ import numpy as np
 from mathlab.mathutils import operators as ops
 
 def taylor_series(nterms, indep_var, basefunc, x_val, origin = 0):
+	'''
+	Makes taylor series upto nterms for basefunc, with starting point
+	at origin and evalutates the basefunc wrt to x_val and indep_var
+	as sympy Symbol
+	
+	'''
   baseval = basefunc.evalf(n =3, subs = {indep_var : origin})
   # print('baseval :', baseval)
   taylor_terms = [baseval]
