@@ -6,8 +6,8 @@ import sympy as sp
 from mathlab import taylor
 
 x = sp.Symbol('x')
-num_pow = 2
-y = 5*x**2 + 23*x**5 + 3*x**8
+
+y = 1 / (1 + (x**2))
 
 
 # 2 /(x**num_pow - x)
